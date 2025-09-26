@@ -1,0 +1,127 @@
+/* src/components/AuthForms.css or RegisterPage.css / LoginPage.css */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  padding: 20px;
+  box-sizing: border-box;
+  background: transparent; /* Let the stars-container background show */
+  position: relative; /* For z-index if needed */
+  z-index: 10; /* Ensure form is above stars */
+}
+
+.auth-form-card {
+  background: rgba(255, 255, 255, 0.08); /* Semi-transparent white for frosted glass effect */
+  border-radius: 15px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(8px); /* For Safari */
+  text-align: center;
+}
+
+.auth-form-card h2 {
+  color: #e0e0e0; /* Light grey for headings */
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(0, 150, 255, 0.7); /* Subtle glow */
+}
+
+.auth-form-card .error {
+  color: #ff6b6b; /* Error messages in a soft red */
+  margin-bottom: 20px;
+  background: rgba(255, 107, 107, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.auth-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between inputs */
+}
+
+.auth-form-card input {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 12px 10px;
+  border: 1px solid rgba(100, 180, 255, 0.4); /* Blue border for inputs */
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3); /* Darker input background */
+  color: #e0e0e0; /* Light text in inputs */
+  font-size: 1em;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-form-card input::placeholder {
+  color: rgba(224, 224, 224, 0.6); /* Lighter placeholder text */
+}
+
+.auth-form-card input:focus {
+  border-color: #00aaff; /* Brighter blue on focus */
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.5); /* Glowing effect on focus */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.auth-form-card button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #007bff, #00aaff); /* Gradient blue button */
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4); /* Subtle shadow for button */
+  letter-spacing: 0.5px;
+}
+
+.auth-form-card button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #007bff); /* Darker gradient on hover */
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+  transform: translateY(-2px); /* Slight lift */
+}
+
+.auth-form-card button:disabled {
+  background: #6c757d; /* Greyed out when disabled */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.auth-form-card .switch-auth-link {
+  margin-top: 25px;
+  color: #bbd0ff; /* Light blue for the "switch" link */
+  font-size: 0.95em;
+}
+
+.auth-form-card .switch-auth-link a {
+  color: #00aaff; /* Brighter blue for the link text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.auth-form-card .switch-auth-link a:hover {
+  color: #66ccff; /* Even brighter blue on hover */
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .auth-form-card {
+    padding: 30px 20px;
+    margin: 0 15px; /* Add some side margin on small screens */
+  }
+
+  .auth-form-card h2 {
+    font-size: 1.8em;
+  }
+}
