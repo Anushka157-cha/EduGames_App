@@ -3,7 +3,9 @@
 EduGame is an interactive educational platform that combines learning with gaming elements to make education more engaging and fun. The application offers various subjects including Geography, Chemistry, and Physics, with interactive quizzes and games.
 
 ## 🌐 Live Demo
-[Play EduGame](https://edu-games-play-and-learn1.vercel.app/chat)
+[[Play EduGame]](https://edugames-a2087.web.app/)
+
+https://youtu.be/DK0Zvm1BPZM?si=C8yHpjUfN92KvWpW
 
 ## 📱 Progressive Web App (PWA) Features
 
